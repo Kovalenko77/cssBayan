@@ -1,0 +1,49 @@
+body {
+   color: rgb(14, 67, 114); 
+   background-color: aliceblue;
+}
+main {
+    width: 300px;
+    margin: auto;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.first {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.first-item {
+    margin-bottom: 5px;
+}
+
+.first-MEM {
+    display: none;
+    font-size: 14px;
+}
+
+.first-title {
+    display: block;
+    color: blue;
+    cursor: pointer;
+}
+
+.first-input {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.first-input:hover ~ .first-title,
+.first-input:checked ~ .first-title {
+    color: black;
+}
+
+.first-input:hover ~ .first-MEM,
+.first-input:checked ~ .first-MEM {
+    display: block;
+    
+}
