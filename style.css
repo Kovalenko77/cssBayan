@@ -5,10 +5,12 @@ body {
 main {
     width: 300px;
     margin: auto;
+    cursor: pointer;
 }
 
 p {
     margin: 0 0 5px;
+
 }
 
 .first {
@@ -18,17 +20,24 @@ p {
 
 .first-item {
     margin-bottom: 5px;
+
 }
 
 .first-MEM {
-    display: none;
+    height: 0px;
     font-size: 14px;
+    opacity:0; 
+    
+}
+
+img {
+    height: 0px;
 }
 
 .first-title {
     display: block;
     color: blue;
-    cursor: pointer;
+    
 }
 
 .first-input {
@@ -40,10 +49,31 @@ p {
 .first-input:hover ~ .first-title,
 .first-input:checked ~ .first-title {
     color: black;
+
 }
 
 .first-input:hover ~ .first-MEM,
 .first-input:checked ~ .first-MEM {
     display: block;
+    height: 200px;
+    transition: opacity 1s;
+    opacity: 1;
     
+}
+
+.first-input:hover ~ .first-MEM img,
+.first-input:checked ~ .first-MEM img {
+    height: 200px;
+}
+
+.test {
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+}
+
+.test:hover {
+    transition: opacity 0.5s;
+    opacity: 1;
 }
