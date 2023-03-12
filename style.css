@@ -1,0 +1,79 @@
+body {
+   color: rgb(14, 67, 114); 
+   background-color: aliceblue;
+}
+main {
+    width: 300px;
+    margin: auto;
+    cursor: pointer;
+}
+
+p {
+    margin: 0 0 5px;
+
+}
+
+.first {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.first-item {
+    margin-bottom: 5px;
+
+}
+
+
+.first-MEM img {
+    height: 0px;
+    opacity: 1;
+ 
+
+}
+
+.first-title {
+    display: block;
+    color: blue;
+    background: url(icons/plus.png); 
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.first-input:hover ~ .first-title,
+.first-input:checked ~ .first-title {
+    background: url(icons/cross.png); 
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.first-input {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.first-input:hover ~ .first-title,
+.first-input:checked ~ .first-title {
+    color: black;
+    cursor: pointer;
+
+}
+
+.first-input:hover ~ .first-MEM,
+.first-input:checked ~ .first-MEM {
+    display: block;
+    height: 200px;
+    transition-duration: 1s;
+    opacity: 1;
+    text-align: center;
+}
+/*Картинка ст-я видимой, мы присвоили ей размер*/
+.first-input:hover ~ .first-MEM img,
+.first-input:checked ~ .first-MEM img {
+    height: 200px;
+    transition-duration: 1s;
+    opacity: 1;
+    margin: 15px;
+}
+
