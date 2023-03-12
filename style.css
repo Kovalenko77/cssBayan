@@ -27,6 +27,7 @@ p {
 .first-MEM img {
     height: 0px;
     opacity: 1;
+ 
 
 }
 
@@ -63,7 +64,7 @@ p {
 .first-input:checked ~ .first-MEM {
     display: block;
     height: 200px;
-    transition: opacity 1s;
+    transition-duration: 1s;
     opacity: 1;
     text-align: center;
 }
@@ -71,5 +72,8 @@ p {
 .first-input:hover ~ .first-MEM img,
 .first-input:checked ~ .first-MEM img {
     height: 200px;
+    transition-duration: 1s;
+    opacity: 1;
+    margin: 15px;
 }
 
