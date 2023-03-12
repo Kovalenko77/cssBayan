@@ -23,21 +23,26 @@ p {
 
 }
 
-.first-MEM {
-    height: 0px;
-    font-size: 14px;
-    opacity:0; 
-    
-}
 
-img {
+.first-MEM img {
     height: 0px;
+    opacity: 1;
 }
 
 .first-title {
     display: block;
     color: blue;
-    
+    background: url(icons/plus.png); 
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.first-input:hover ~ .first-title,
+.first-input:checked ~ .first-title {
+    background: url(icons/cross.png); 
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 .first-input {
@@ -52,28 +57,17 @@ img {
 
 }
 
-.first-input:hover ~ .first-MEM,
-.first-input:checked ~ .first-MEM {
+.first-input:hover ~ .first-item,
+.first-input:checked ~ .first-item {
     display: block;
     height: 200px;
     transition: opacity 1s;
     opacity: 1;
     
 }
-
+/*Картинка ст-я видимой, мы присвоили ей размер*/
 .first-input:hover ~ .first-MEM img,
 .first-input:checked ~ .first-MEM img {
     height: 200px;
 }
 
-.test {
-    background-color: brown;
-    height: 100px;
-    width: 100px;
-    opacity: 0;
-}
-
-.test:hover {
-    transition: opacity 0.5s;
-    opacity: 1;
-}
