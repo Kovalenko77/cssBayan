@@ -27,6 +27,7 @@ p {
 .first-MEM img {
     height: 0px;
     opacity: 1;
+
 }
 
 .first-title {
@@ -54,16 +55,17 @@ p {
 .first-input:hover ~ .first-title,
 .first-input:checked ~ .first-title {
     color: black;
+    cursor: pointer;
 
 }
 
-.first-input:hover ~ .first-item,
-.first-input:checked ~ .first-item {
+.first-input:hover ~ .first-MEM,
+.first-input:checked ~ .first-MEM {
     display: block;
     height: 200px;
     transition: opacity 1s;
     opacity: 1;
-    
+    text-align: center;
 }
 /*Картинка ст-я видимой, мы присвоили ей размер*/
 .first-input:hover ~ .first-MEM img,
